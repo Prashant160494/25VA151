@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layout 2</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        html,*{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        main{
+            width: 1200px;
+            height: auto;
+            background-color: bisque;
+            margin: o auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        header,footer{
+            height: 150px;
+            background-color: #999;text-align: center;line-height: 150px;
+        }
+        Aside{
+            height: 400px;
+            background-color: bisque;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+        #Box1{
+            flex-grow: 2;
+            background-color: aquamarine;
+            text-align: center;
+            line-height:  400px;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <header><h2>Hello World!</h2></header>
+        <Aside>
+            <div><h3>Aside</h3></div>
+            <div id="Box1"><h3>Box1</h3></div>
+            <div id="Box2"><h3>Box2</h3></div>
+            <div id="Box3"><h3>Box3</h3></div>
+            <div id="Box4"><h3>Box4</h3></div>
+        </Aside>
+        <footer>Footer</footer>
+    </main>
+</body>
+</html>
