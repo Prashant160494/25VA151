@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Modern College Navbar</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        nav{
+            background: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 50px;
+        }
+
+        .logo{
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .menu{
+            list-style: none;
+            display: flex;
+        }
+
+        .menu li{
+            margin-left: 25px;
+        }
+
+        .menu li a{
+            text-decoration: none;
+            color: white;
+            position: relative;
+            padding: 5px 0;
+        }
+
+        .menu li a::after{
+            content: "";
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            background-color: yellow;
+            left: 0;
+            bottom: 0;
+            transition: 0.4s;
+        }
+
+        .menu li a:hover::after{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">My College</div>
+    <ul class="menu">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Admissions</a></li>
+        <li><a href="#">Academics</a></li>
+        <li><a href="#">Clubs</a></li>
+        <li><a href="#">Campus</a></li>
+        <li><a href="#">Placements</a></li>
+        <li><a href="#">Research</a></li>
+        <li><a href="#">Entrepreneurship</a></li>
+    </ul>
+</nav>
+
+</body>
+</html>
